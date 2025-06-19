@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .items {
+            margin: 30px;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            row-gap: 50px;
+        }
+
+        .infobox {
+            height: 250px;
+            width: 400px;
+            background-color: rgb(65, 65, 65);
+            border-radius: 15px;
+            box-shadow: 4px 4px 8px 0 rgba(6, 6, 6, 0.5);
+        }
+
+        .clip_img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .text{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titlebar lato-black">
+        <ul>
+            <li><a href=<%=home%>>Home</a></li>
+            <li style="border-bottom: 5px solid white;"><a href=<%=dashboard%>>Dashboard</a></a></li>
+            <li><a href=<%=aboutme%>>About me</a></a></li>
+            <li><a href=<%=contacts%>>Contacts</a></li>
+            <li><a href=<%=socials%>>Socials</a></li>
+            <li><a href=<%=projects%>>Projects</a></li>
+        </ul>
+    </div>
+    <div class="mainarea">
+        <div class="items">
+            <a href="/" target="_blank" style="text-decoration: none;"  class="infobox hzoom">
+            <div>
+ 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0dhO9J7R4JT424Qs-RcZqQRkw9tTCbJoxw&s" class="clip_img" alt="image" width="80%">
+                    <div class="text">HOME</div>
+
+            </div>
+        </a>
+        <a href="/about" target="_blank" style="text-decoration: none;"  class="infobox hzoom">
+            <div>
+                    <img src="" class="clip_img" alt="image" width="80%">
+                    <div class="text">ABOUT ME</div>
+            </div>
+        </a>
+        <a href="/projects" target="_blank" style="text-decoration: none;"  class="infobox hzoom">
+            <div>
+                    <img src="" class="clip_img" alt="image" width="80%">
+                    <div class="text">PROJECTS</div>
+            </div>
+        </a>
+        <a href="/contacts" target="_blank" style="text-decoration: none;"  class="infobox hzoom">
+            <div>
+                    <img src="" class="clip_img" alt="image" width="80%">
+                    <div class="text">CONTACTS</div>
+            </div>
+        </a>
+        <a href="/socials" target="_blank" style="text-decoration: none;"  class="infobox hzoom">
+            <div>
+                    <img src="" class="clip_img" alt="image" width="80%">
+                    <div class="text">SOCIAL</div>
+            </div>
+        </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

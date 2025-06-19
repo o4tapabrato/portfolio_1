@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    image-resolution: 400dpi;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background: #626262;
+    margin: 0;
+    padding: 0;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.titlebar ul li {
+    list-style: none;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.titlebar ul li:hover {
+    background-color: rgb(184, 182, 183);
+}
+
+.titlebar ul {
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.titlebar {
+    width: 100vw;
+    z-index: 30;
+    background-color: rgb(69, 69, 69);
+    position: sticky;
+    top: 0;
+}
+
+.test {
+    height: 5000px;
+}
+
+.cover {
+    height: 60vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 96vw;
+    height: 120vh;
+    z-index: 12;
+    border-radius: 20px;
+    background-color: rgb(69, 69, 69);
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+    top: 10vh;
+    gap: 10px;
+}
+
+.avatar {
+    z-index: 16;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    background-color: rgb(143, 143, 142);
+    color: pink;
+    position: relative;
+    top: 27vh;
+    left: 5vw;
+    border: 5px solid rgb(117, 117, 117);
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.holder {
+    position: relative;
+    z-index: 20;
+}
+
+.name {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    top: 30vh;
+    left: 8.5vw;
+}
+
+@media only screen and (max-width: 650px) {
+    .name {
+        font-size: 20px;
+        top: 20vh;
+        left: 5vw;
+    }
+    .avatar {
+        height: 30vw;
+        width: 30vw;
+        top: 20vh;
+        left: 5vw;
+    }
+}
+
+.infobox {
+    position: relative;
+    width: 84vw;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.screen {
+    font-size: 75px;
+    color: whitesmoke;
+    border-right: 5px solid white;
+    animation-name: blink;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0% {border-color: black;}
+    100% {border-color: white;}
+}
+
+.pfp {
+    width: 20vw;
+    margin: auto;
+    z-index: 15;
+    object-fit: cover;
+    filter: invert();
+    border-radius: 50%;
+}
+
+.imageholder {
+    height: 30vh;
+    z-index: 15;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs {
+    height: 30vh;
+    transition: transform 0.5s ease-in-out;
+    margin-right: 20px;
+    margin-right: 20px;
+}
+
+.imgs:hover {
+    transform: scale(1.1);
+
+}
+
+.cardholder {
+    height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 15px;
+}
+
+.canvass {
+    height: 350px;
+    width: 500px;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    
+}
+
+
+.hzoom{
+    transition: transform 0.5s ease-in-out;
+}
+.hzoom:hover{
+    transform: scale(1.05);
+}
+
+.cardImg {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.cimg {
+    
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.info {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: justify;
+    padding: 5px;
+}
+
+
+.login{
+    position: fixed;
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loginbox{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(73, 73, 73);
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 50px;
+
+}
+
+
+fieldset{
+    box-sizing: border-box;
+    color: azure;
+    width: 460px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+legend{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+input{
+    width: 400px;
+    background-color: rgb(73, 73, 73);
+    border: none;
+    height: 50px;
+    font-size: 25px;
+    color: azure;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    stroke: none;
+}
+
+.loginbtn{
+    height: 30px;
+    width: 95px;
+    position: relative;
+}
+
+.submit{
+    font-size: 20px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.icons {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 12;
+}
+
+.icons button {
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 20;
+}
+
+.del:hover {
+    background-color: #444;
+}
+
+.edit:hover {
+    background-color: #444;
+}

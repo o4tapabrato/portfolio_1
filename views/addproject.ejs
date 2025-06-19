@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add New Project</h2>
+  <form action="/projects/addf" method="POST">
+    <label for="name">Project Name</label>
+    <input type="text" name="name" id="name" required>
+  
+    <label for="image">Image Link</label>
+    <input type="text" name="image" id="image"  required>
+  
+    <label for="desc">Description</label>
+    <textarea name="desc" required></textarea>
+  
+    <label for="priority">Priority</label>
+    <input type="text" name="priority" id="priority" required>
+  
+    <button type="submit">Create Project</button>
+  </form>
+</body>
+</html>

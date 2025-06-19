@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o4tapabrato's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titlebar lato-black">
+        <ul>
+            <li style="border-bottom: 5px solid white;"><a href=<%= home%>>Home</a></li>
+            <li><a href=<%= dashboard%>>Dashboard</a></a></li>
+            <li><a href=<%= aboutme%>>About me</a></a></li>
+            <li><a href=<%= contacts%>>Contacts</a></li>
+            <li><a href=<%= socials%>>Socials</a></li>
+            <li><a href=<%= projects%>>Projects</a></li>
+            <li><a href=<%= login%>>Admin Login</a></li>
+        </ul>
+    </div>
+
+    <div class="cover">
+        <!-- <img src="cover1.jpg" alt=""> -->
+        <div class="screen lato-black">
+            HELLO WORLD
+        </div>
+    </div>
+    <div class="holder">
+        <div class="avatar">
+            <img class="pfp" src="<%=pimg%>" alt="profile image">
+        </div>
+        
+        <div class="content">
+            <div class="name lato-black"><%=name%></div>
+            <div class="infobox lato-black">
+                <p><%=desc%>
+                </p>
+                <br>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="log.js"></script>
+</body>
+</html>
